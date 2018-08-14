@@ -1,0 +1,5 @@
+<launch>
+  <node name="pid" pkg="pid_regulator" type="pid" output="screen">
+    <rosparam command="load" file="$(find pid_regulator)/config/pid.yaml" />
+  </node>
+</launch>
